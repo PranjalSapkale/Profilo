@@ -100,7 +100,7 @@ body{
 }  
 
 
-.box h1{
+/* .box h1{
     font-size: 4.5em;
     margin-bottom: 0.2em;
     color: #0895d1;
@@ -109,7 +109,7 @@ body{
     font-size: 1.2em;
     color: var(--sec-font-color);
     margin-bottom: 1.2em;
-}
+} */
 
 .main img{
     width: 35em;
