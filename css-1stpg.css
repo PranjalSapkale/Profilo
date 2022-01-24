@@ -84,6 +84,22 @@ body{
     border-right: 1px solid #4985c9;
     z-index: -11;
 }
+
+.set h1{
+    font-size: 4.5em;
+    margin-bottom: 0.2em;
+    color: #0895d1;
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+
+}  
+
+/*
 .box h1{
     font-size: 4.5em;
     margin-bottom: 0.2em;
@@ -94,6 +110,7 @@ body{
     color: var(--sec-font-color);
     margin-bottom: 1.2em;
 }
+*/
 .main img{
     width: 35em;
     position: absolute;
@@ -106,6 +123,26 @@ body{
     right: 60px;
     z-index: -1;
 }
+
+/*believe tag*/
+.tag p {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+
 
 /* about */
 .about{
@@ -271,6 +308,41 @@ body{
     padding: 2em;
     background: rgba(255, 255, 255, 0.034);
 }
+
+
+/*<!-- i'm possible text hower -->*/
+.effect h1{
+  color: #484848;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.effect h1 span{
+  transition: .5s linear
+}
+.effect h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+.effect h1:hover span:nth-child(1):after{
+  content: "'";
+}
+.effect h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+.effect h1:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+
+
+/*end line*/
 .end{
     background-color:#154360;
     color: white;
@@ -324,6 +396,37 @@ body{
     margin-top: 35px;
     margin-left: 375px;
 }
+
+
+
+
+/*class tag*/
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+/*class set*/
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+}  
+
+
+/*class effect*/
 @media (max-width: 1250px){
     .main img{ width: 25em; right: 0; }
 }
@@ -358,6 +461,8 @@ body{
         background: var(--main-color);
     }
 }
+
+
 @media (max-width: 900px){
     .main img{
         width: 30em;
