@@ -99,7 +99,7 @@ body{
 
 }  
 
-/*
+
 .box h1{
     font-size: 4.5em;
     margin-bottom: 0.2em;
@@ -110,7 +110,7 @@ body{
     color: var(--sec-font-color);
     margin-bottom: 1.2em;
 }
-*/
+
 .main img{
     width: 35em;
     position: absolute;
